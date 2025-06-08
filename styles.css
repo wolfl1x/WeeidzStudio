@@ -1,0 +1,109 @@
+:root {
+  --button-bg: rgba(255, 255, 255, 0.05);
+  --button-border: rgba(255, 255, 255, 0.15);
+  --text-color: #ffffff;
+  --background-image: url("img/bg-dark.svg");
+}
+
+[data-theme="light"] {
+  --button-bg: rgba(0, 0, 0, 0.05);
+  --button-border: rgba(0, 0, 0, 0.15);
+  --text-color: #000000;
+  --background-image: url("img/bg-light.jpg");
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: var(--background-image) no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text-color);
+  transition: background-image 0.4s ease, color 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Очищаем затемнение: убираем лишний фон, фильтры и т.д. */
+
+.container {
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.handle {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+/* БОЛЬШИЙ переключатель */
+.theme-toggle {
+  width: auto;
+  height: auto;
+  margin: 0 auto 2rem;
+  cursor: pointer;
+}
+
+.theme-toggle img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  padding: 1.2rem;
+  background: var(--button-bg);
+  border: 1px solid var(--button-border);
+  border-radius: 12px;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  transition: all 0.3s ease;
+}
+
+.socials {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.theme-icon {
+  width: 28px;
+  height: 28px;
+  transition: opacity 0.3s ease;
+}
+
+.credit {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin-top: 1.5rem;
+  color: var(--text-color);
+}
