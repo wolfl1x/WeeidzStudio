@@ -86,3 +86,45 @@ body {
   opacity: 0.8;
   margin-top: 2rem;
 }
+
+@media (max-width: 480px) {
+  .logo {
+    width: 100px;
+  }
+
+  .handle {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .credit {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .button {
+    font-size: 0.85rem;
+    padding: 0.9rem;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+
