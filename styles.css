@@ -2,7 +2,7 @@
   --button-bg: rgba(0, 0, 0, 0.05);
   --button-border: rgba(0, 0, 0, 0.15);
   --text-color: #000000;
-  --background-image: url("img/bg-light.jpg");
+  --background-image: url("img/bg-light.svg");
 }
 
 body {
