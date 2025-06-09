@@ -201,8 +201,8 @@ body {
 .panel a {
   display: block;
   width: 100%;
-  max-width: 460px;
-  padding: 0.7rem 6rem; /* Меньше по высоте, обычная ширина */
+  max-width: 490px;
+  padding: 0.7rem 10rem; /* Меньше по высоте, обычная ширина */
   
   background: var(--button-bg);
   border: 1px solid var(--button-border);
