@@ -13,8 +13,8 @@ function toggleTheme() {
   // Обновить иконку переключателя
   document.getElementById("theme-icon").src =
     newTheme === "dark"
-      ? "icons/moon.png"
-      : "icons/sun.png";
+      ? "icons/moon.svg"
+      : "icons/sun.svg";
 
   // Обновить соц. иконки
   const icons = document.querySelectorAll(".theme-icon");
