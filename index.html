@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weeidz Studio</title>
+  <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -13,10 +14,22 @@
     <div class="handle">@WeeidzStudio</div>
 
     <div class="buttons">
-      <a class="button" href="https://example.com/logo" target="_blank">Logo Brief</a>
-      <a class="button" href="https://example.com/site" target="_blank">Site Brief</a>
-      <a class="button" href="mailto:denys.syniak@gmail.com" target="_blank">Contact Us</a>
-    </div>
+      <button class="accordion">Logo Brief</button>
+      <div class="panel">
+        <a href="https://example.com/logo1" target="_blank">Logo Option 1</a>
+        <a href="https://example.com/logo2" target="_blank">Logo Option 2</a>
+        <a href="https://example.com/logo3" target="_blank">Logo Option 3</a>
+      </div>
+
+      <button class="accordion">Site Brief</button>
+      <div class="panel">
+        <a href="https://example.com/site1" target="_blank">Site Option 1</a>
+        <a href="https://example.com/site2" target="_blank">Site Option 2</a>
+        <a href="https://example.com/site3" target="_blank">Site Option 3</a>
+      </div>
+
+      <a class="button" href="mailto:example@gmail.com" target="_blank">Contact Us</a>
+   </div>
 
     <div class="socials">
       <a href="https://www.behance.net/denys_syniak" target="_blank">
@@ -36,7 +49,24 @@
       </a>
     </div>
 
-    <div class="credit">Made with ♥ Weeidz Studio</div>
+    <div class="credit">Made with ♥ Studio Weeidz Studio</div>
   </div>
+
+  <script>
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach((acc) => {
+      acc.addEventListener("click", function () {
+        const panel = this.nextElementSibling;
+        const isOpen = panel.style.maxHeight;
+        document.querySelectorAll('.panel').forEach(p => p.style.maxHeight = null); // Закрываем все
+
+        if (!isOpen) {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
