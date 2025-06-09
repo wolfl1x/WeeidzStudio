@@ -2,14 +2,14 @@
   --button-bg: rgba(255, 255, 255, 0.05);
   --button-border: rgba(255, 255, 255, 0.15);
   --text-color: #ffffff;
-  --background-image: url("img/bg-dark.svg");
+  --background-image: url("img/bg-dark.png");
 }
 
 [data-theme="light"] {
   --button-bg: rgba(0, 0, 0, 0.05);
   --button-border: rgba(0, 0, 0, 0.15);
   --text-color: #000000;
-  --background-image: url("img/bg-light.jpg");
+  --background-image: url("img/bg-light.png");
 }
 
 body {
