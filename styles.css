@@ -97,32 +97,34 @@ body {
   transform: translateY(-2px);
 }
 
-/* === ACCORDION BUTTONS === */
+/* === ACCORDION BUTTONS (e.g. Logo Brief, Website Brief) === */
 .accordion {
   cursor: pointer;
-  padding: 1.4rem;
+  padding: 1.3rem 1rem;
   width: 100%;
   max-width: 460px;
 
-  background: var(--button-bg);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.15); /* Same as --button-bg */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* Light border like button */
   border-radius: 16px;
   box-sizing: border-box;
 
   color: var(--text-color);
   font-size: 1rem;
+  font-weight: 500;
   text-align: center;
 
-  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.15); /* Same white shadow as button */
   transition: all 0.3s ease;
 
   margin-bottom: 0.1rem;
 }
 
+/* === Hover effect for accordion buttons (like Contact Us) === */
 .accordion:hover {
-  background: rgba(0, 0, 0, 0.06);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
 }
 
 /* === ACCORDION PANEL LINKS === */
@@ -217,10 +219,21 @@ body {
     box-sizing: border-box;
   }
 
+  .accordion {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-color);
+  }
+
+  .accordion:focus,
+  .accordion:active {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-color);
+  }
+
   .panel a {
     max-width: 100%;
     width: 100%;
-    padding: 0.9rem 8rem;
+    padding: 0.9rem 5rem;
     font-size: 0.95rem;
     box-sizing: border-box;
   }
