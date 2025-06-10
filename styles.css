@@ -1,9 +1,9 @@
 :root {
   /* === GLOBAL VARIABLES === */
-  --button-bg: rgba(0, 0, 0, 0.05);          /* Button background */
-  --button-border: rgba(0, 0, 0, 0.15);      /* Button border */
-  --text-color: #000000;                    /* Text color */
-  --background-image: url("img/bg-light.png"); /* Page background image */
+  --button-bg: rgba(255, 255, 255, 0.15);     /* Button background */
+  --button-border: rgba(255, 255, 255, 0.15); /* Button border */
+  --text-color: #ffffff;                      /* Text color */
+  --background-image: url("img/bg-dark.png"); /* Page background image */
 }
 
 /* === PAGE LAYOUT === */
