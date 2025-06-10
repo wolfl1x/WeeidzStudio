@@ -144,7 +144,7 @@ body {
   display: block;
   width: 100%;
   max-width: 490px;
-  padding: 0.7rem 10rem;
+  padding: 0.7rem 6rem;
 
   background: var(--button-bg);
   border: 1px solid var(--button-border);
