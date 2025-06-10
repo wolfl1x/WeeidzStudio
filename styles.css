@@ -24,6 +24,7 @@ body {
   max-width: 440px;
   width: 100%;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 /* === LOGO + HANDLE === */
@@ -202,9 +203,26 @@ body {
     font-size: 0.9rem;
   }
 
-  .button {
-    padding: 1rem;
+  .container {
+    padding: 0 1rem;
+  }
+
+  .button,
+  .accordion,
+  .showreel-button {
+    max-width: 100%;
+    width: 100%;
+    padding: 1.3rem 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  .panel a {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.9rem 1rem;
     font-size: 0.95rem;
+    box-sizing: border-box;
   }
 
   .social-icon {
@@ -215,10 +233,6 @@ body {
   .credit {
     font-size: 1rem;
     margin-top: 1.5rem;
-  }
-
-  .container {
-    padding: 0 1rem;
   }
 }
 
